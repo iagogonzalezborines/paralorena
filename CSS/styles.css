@@ -1,0 +1,618 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #61988E ;
+  }
+  h1{
+    font-family: "Broted";
+    color: cyan;
+  }
+  h2.passwd{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ff94a6;
+    border: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 3%;
+  }
+
+  h1:hover {
+    color: pink;
+    text-shadow: 0px 0px 10px pink;
+    transform: rotateY(360deg);
+    transition: all 0.5s ease-in-out;
+  }
+  h2{
+    font-family: "Broted";
+    color: cyan;
+  }
+  
+  p{
+    font-family: "Birthday";
+    color: #94d2fc;
+  }
+  section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+  }
+  .content{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    text-overflow: unset;
+  }
+  .easter-egg{
+    position: absolute;
+    bottom: 00.02%;
+    left: 100%;
+  }
+  .floating-heart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  #heart { 
+    position: relative; 
+    width: 100px; 
+    height: 90px; 
+} 
+
+#heart:before, #heart:after { 
+    position: absolute; 
+    content: ""; 
+    left: 50px; 
+    top: 0; 
+    width: 50px; 
+    height: 80px; 
+    background: red; 
+    border-radius: 50px 50px 0 0; 
+    transform: rotate(-45deg); 
+    transform-origin: 0 100%; 
+} 
+
+#heart:after { 
+    left: 0; 
+    transform: rotate(45deg); 
+    transform-origin :100% 100%; 
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.col{
+  position: fixed;
+  left: 5%;
+  top: 15%;
+  border: 15px;
+ 
+}
+.button-49,
+.button-49:after {
+  width: 150px;
+  height: 76px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #00E6F6;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-49:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'LOVE YOU';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+.button-49:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .button-49,
+  .button-49:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+  }
+}
+
+  .bg-image {
+    background-image: url("../img/background.png");
+    
+  }
+  p.phrase{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-family: 
+    "Broted";
+    letter-spacing: 4px;
+    top: 1%;
+  }
+  
+ /* Audio Player Styling */
+.audio-player {
+  background-color: cyan;
+  border: 2px solid #ff94a6;
+  border-radius: 5px;
+  padding: 10px;
+  width: 600px;
+  text-align: center;
+  font-family:"Lobster";
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Audio Player Controls Styling */
+.audio-player audio {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.audio-player audio::-webkit-media-controls-start-playback-button,
+.audio-player audio::-webkit-media-controls-end-playback-button {
+  background-color: #ff94a6;
+}
+
+.audio-player audio::-webkit-media-controls-play-button {
+  background-image: url("path/to/play-button.png");
+  background-size: contain;
+}
+
+.audio-player audio::-webkit-media-controls-pause-button {
+  background-image: url("path/to/pause-button.png");
+  background-size: contain;
+}
+
+/* Birthday Decorations */
+.audio-player:before {
+  content: "🇲🇽   ";
+  font-size: 36px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Confetti Styling */
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #f7d7d7;
+  animation: confetti-fall 110s ease-out both;
+}
+
+.confetti::before,
+.confetti::after {
+  content: 'Love you';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  z-index: 100;
+}
+
+.confetti::before {
+  border-top-color: #7e1c9c;
+  border-right-color: #2359cc;
+  top: -5px;
+  left: 0;
+  animation: confetti-fall-side 3s ease-out both;
+}
+
+.confetti::after {
+  border-bottom-color: #23be7e;
+  border-left-color: #b47676;
+  bottom: -5px;
+  right: 0;
+  animation: confetti-fall-side 3s ease-out both;
+}
+span {
+  text-transform: uppercase;
+}
+.container {
+  width: 800px;
+  height: 420px;
+  padding: 10px;
+  margin: 0 auto;
+  position: relative;
+}
+.balloon {
+  width: 738px;
+  margin: 0 auto;
+  padding-top: 30px;
+  position: relative;
+}
+.balloon > div {
+  width: 104px;
+  height: 140px;
+  background: rgba(182, 15, 97, 0.9);
+  border-radius: 0;
+  border-radius: 80% 80% 80% 80%;
+  margin: 0 auto;
+  position: absolute;
+  padding: 10px;
+  box-shadow: inset 17px 7px 10px rgba(182, 15, 97, 0.9);
+  
+}
+.balloon > div:nth-child(1) {
+  background: rgba(182, 15, 97, 0.9);
+  left: 0;
+  box-shadow: inset 10px 10px 10px rgba(135, 11, 72, 0.9);
+  -webkit-animation: balloon1 6s ease-in-out infinite;
+  -moz-animation: balloon1 6s ease-in-out infinite;
+  -o-animation: balloon1 6s ease-in-out infinite;
+  animation: balloon1 6s ease-in-out infinite;
+}
+.balloon > div:nth-child(1):before {
+  color: rgba(182, 15, 97, 0.9);
+}
+.balloon > div:nth-child(2) {
+  background: rgba(242, 112, 45, 0.9);
+  left: 120px;
+  box-shadow: inset 10px 10px 10px rgba(222, 85, 14, 0.9);
+  -webkit-animation: balloon2 6s ease-in-out infinite;
+  -moz-animation: balloon2 6s ease-in-out infinite;
+  -o-animation: balloon2 6s ease-in-out infinite;
+  animation: balloon2 6s ease-in-out infinite;
+}
+.balloon > div:nth-child(2):before {
+  color: rgba(242, 112, 45, 0.9);
+}
+.balloon > div:nth-child(3) {
+  background: rgba(45, 181, 167, 0.9);
+  left: 240px;
+  box-shadow: inset 10px 10px 10px rgba(35, 140, 129, 0.9);
+  -webkit-animation: balloon4 6s ease-in-out infinite;
+  -moz-animation: balloon4 6s ease-in-out infinite;
+  -o-animation: balloon4 6s ease-in-out infinite;
+  animation: balloon4 6s ease-in-out infinite;
+}
+.balloon > div:nth-child(3):before {
+  color: rgba(45, 181, 167, 0.9);
+}
+.balloon > div:nth-child(4) {
+  background: rgba(190, 61, 244, 0.9);
+  left: 360px;
+  box-shadow: inset 10px 10px 10px rgba(173, 14, 240, 0.9);
+  -webkit-animation: balloon1 5s ease-in-out infinite;
+  -moz-animation: balloon1 5s ease-in-out infinite;
+  -o-animation: balloon1 5s ease-in-out infinite;
+  animation: balloon1 5s ease-in-out infinite;
+}
+.balloon > div:nth-child(4):before {
+  color: rgba(190, 61, 244, 0.9);
+}
+.balloon > div:nth-child(5) {
+  background: rgba(180, 224, 67, 0.9);
+  left: 480px;
+  box-shadow: inset 10px 10px 10px rgba(158, 206, 34, 0.9);
+  -webkit-animation: balloon3 5s ease-in-out infinite;
+  -moz-animation: balloon3 5s ease-in-out infinite;
+  -o-animation: balloon3 5s ease-in-out infinite;
+  animation: balloon3 5s ease-in-out infinite;
+}
+.balloon > div:nth-child(5):before {
+  color: rgba(180, 224, 67, 0.9);
+}
+.balloon > div:nth-child(6) {
+  background: rgba(242, 194, 58, 0.9);
+  left: 600px;
+  box-shadow: inset 10px 10px 10px rgba(234, 177, 15, 0.9);
+  -webkit-animation: balloon2 3s ease-in-out infinite;
+  -moz-animation: balloon2 3s ease-in-out infinite;
+  -o-animation: balloon2 3s ease-in-out infinite;
+  animation: balloon2 3s ease-in-out infinite;
+}
+.balloon > div:nth-child(6):before {
+  color: rgba(242, 194, 58, 0.9);
+}
+.balloon > div:before {
+  color: rgba(182, 15, 97, 0.9);
+  position: absolute;
+  bottom: -11px;
+  left: 52px;
+  content:"▲";
+  font-size: 1em;
+}
+span {
+  font-size: 4.8em;
+  color: white;
+  position: relative;
+  top: 30px;
+  left: 50%;
+  margin-left: -27px;
+}
+/*BALLOON 1 4*/
+@-webkit-keyframes balloon1 {
+  0%, 100% {
+      -webkit-transform: translateY(0) rotate(-6deg);
+  }
+  50% {
+      -webkit-transform: translateY(-20px) rotate(8deg);
+  }
+}
+@-moz-keyframes balloon1 {
+  0%, 100% {
+      -moz-transform: translateY(0) rotate(-6deg);
+  }
+  50% {
+      -moz-transform: translateY(-20px) rotate(8deg);
+  }
+}
+@-o-keyframes balloon1 {
+  0%, 100% {
+      -o-transform: translateY(0) rotate(-6deg);
+  }
+  50% {
+      -o-transform: translateY(-20px) rotate(8deg);
+  }
+}
+@keyframes balloon1 {
+  0%, 100% {
+      transform: translateY(0) rotate(-6deg);
+  }
+  50% {
+      transform: translateY(-20px) rotate(8deg);
+  }
+}
+/* BAllOON 2 5*/
+@-webkit-keyframes balloon2 {
+  0%, 100% {
+      -webkit-transform: translateY(0) rotate(6eg);
+  }
+  50% {
+      -webkit-transform: translateY(-30px) rotate(-8deg);
+  }
+}
+@-moz-keyframes balloon2 {
+  0%, 100% {
+      -moz-transform: translateY(0) rotate(6deg);
+  }
+  50% {
+      -moz-transform: translateY(-30px) rotate(-8deg);
+  }
+}
+@-o-keyframes balloon2 {
+  0%, 100% {
+      -o-transform: translateY(0) rotate(6deg);
+  }
+  50% {
+      -o-transform: translateY(-30px) rotate(-8deg);
+  }
+}
+@keyframes balloon2 {
+  0%, 100% {
+      transform: translateY(0) rotate(6deg);
+  }
+  50% {
+      transform: translateY(-30px) rotate(-8deg);
+  }
+}
+/* BAllOON 0*/
+@-webkit-keyframes balloon3 {
+  0%, 100% {
+      -webkit-transform: translate(0, -10px) rotate(6eg);
+  }
+  50% {
+      -webkit-transform: translate(-20px, 30px) rotate(-8deg);
+  }
+}
+@-moz-keyframes balloon3 {
+  0%, 100% {
+      -moz-transform: translate(0, -10px) rotate(6eg);
+  }
+  50% {
+      -moz-transform: translate(-20px, 30px) rotate(-8deg);
+  }
+}
+@-o-keyframes balloon3 {
+  0%, 100% {
+      -o-transform: translate(0, -10px) rotate(6eg);
+  }
+  50% {
+      -o-transform: translate(-20px, 30px) rotate(-8deg);
+  }
+}
+@keyframes balloon3 {
+  0%, 100% {
+      transform: translate(0, -10px) rotate(6eg);
+  }
+  50% {
+      transform: translate(-20px, 30px) rotate(-8deg);
+  }
+}
+/* BAllOON 3*/
+@-webkit-keyframes balloon4 {
+  0%, 100% {
+      -webkit-transform: translate(10px, -10px) rotate(-8eg);
+  }
+  50% {
+      -webkit-transform: translate(-15px, 20px) rotate(10deg);
+  }
+}
+@-moz-keyframes balloon4 {
+  0%, 100% {
+      -moz-transform: translate(10px, -10px) rotate(-8eg);
+  }
+  50% {
+      -moz-transform: translate(-15px, 10px) rotate(10deg);
+  }
+}
+@-o-keyframes balloon4 {
+  0%, 100% {
+      -o-transform: translate(10px, -10px) rotate(-8eg);
+  }
+  50% {
+      -o-transform: translate(-15px, 10px) rotate(10deg);
+  }
+}
+@keyframes balloon4 {
+  0%, 100% {
+      transform: translate(10px, -10px) rotate(-8eg);
+  }
+  50% {
+      transform: translate(-15px, 10px) rotate(10deg);
+  }
+}
+h1 {
+  position: relative;
+  top: 200px;
+  text-align: center;
+  color: white;
+  font-size: 3.5em;
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-200px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+@keyframes confetti-fall-side {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+  }
+}
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+  
+  
+  #birthday-song {
+    margin-top: 20px;
+    width: 300px;
+  }
+  @font-face {
+    font-family: "Broted";
+    src: url(../fonts/BrotedYoungplantscript-Regular.ttf);
+  }
+  
+@font-face {
+  font-family: "Lobster";
+  src: url(../fonts/Lobster-Regular.ttf);
+}
